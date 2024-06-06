@@ -18,8 +18,8 @@ func StartSecureServer() {
 		Patch: 0,
 	})
 	globals.SecureServer.SetKerberosPassword(globals.KerberosPassword)
-	// TODO: whats the access key
-	// globals.SecureServer.SetAccessKey("876138df")
+
+	globals.SecureServer.SetAccessKey("086f9d28")
 
 	globals.Timeline = make(map[uint32][]uint8)
 
