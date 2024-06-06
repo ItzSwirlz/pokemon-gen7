@@ -21,8 +21,7 @@ func StartAuthenticationServer() {
 	})
 	globals.AuthenticationServer.SetKerberosPassword(globals.KerberosPassword)
 
-	// FIXME: What is the access key, we must have it somewhere
-	// globals.AuthenticationServer.SetAccessKey("876138df")
+	globals.AuthenticationServer.SetAccessKey("086f9d28")
 
 	globals.AuthenticationServer.On("Data", func(packet *nex.PacketV1) {
 		request := packet.RMCRequest()
